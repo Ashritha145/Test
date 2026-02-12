@@ -4,6 +4,9 @@ import Movies from './pages/Movies';
 import { Route, Routes,Link } from 'react-router-dom';
 import FavMovies from './pages/FavMovies';
 import RecentlyWatched from './pages/RecentlyWatched';
+import MovieDetails from './pages/MovieDetails';
+import FavMovieDetails from './pages/FavMovieDetails';
+import RecentDetails from './pages/RecentDetails';
 
 const App = () => {
   const [searchInput,setSearchInput]=useState("");
@@ -27,6 +30,9 @@ const App = () => {
       <Route path='/' element={<Movies searchInput={searchInput}/>}/>
       <Route path='/fav' element={<FavMovies searchInput={searchInput}/>}/>
         <Route path='/recent' element={<RecentlyWatched searchInput={searchInput}/>}/>
+        <Route path='/:id' element={<MovieDetails/>}/>
+        <Route path='/fav/:id'element={<FavMovieDetails/>}/>
+        <Route path='/recent/:id' element={<RecentDetails/>}/>
     </Routes>
     </div>
   )  

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.movie-details-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Info Section */
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Text Styling */
+.movie-info p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.movie-info p span {
+  font-weight: 600;
+}
+
+/* Card */
+.movie-card {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding: 30px 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Poster */
+.movie-poster {
+  width: 280px;
+  border-radius: 8px;
+}
+
+
+
+/* Button */
+.back-button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: black;
+  color: white;
+  transform: translateY(-3px);
+}
