@@ -10,7 +10,7 @@ const MovieItem = (props) => {
         <img src={posterUrl} className='image'/>
       <h1 className='movie-title'>Movie: {name}</h1>
       <h1 className='movie-genre'>Genre: {genre}</h1>
-      <p className='movie-rating'>{rating>8?`⭐⭐⭐${rating}`:`⭐${rating}`}</p>
+      <p className='movie-rating'>{rating>8?`⭐⭐${rating}`:`⭐${rating}`}</p>
     </div>
   )
 }

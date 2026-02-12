@@ -10,6 +10,7 @@ const RecentDetails = () => {
     )
   return (
    <div className='movie-details-container'>
+   <h1 className='movie-name'>{`${movie.name} Details: `}</h1>
       <div className='movie-card'>
        <img
           src={movie.posterUrl}
